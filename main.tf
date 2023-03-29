@@ -23,11 +23,6 @@ resource "aws_dynamodb_table" "table_for_s3" {
     name = "LockID"
     type = "S"
   }
-
-  key {
-    attribute_name = "LockID"
-    key_type       = "HASH"
-  }
 }
 
 resource "aws_s3_bucket_policy" "bucket_policy" {
