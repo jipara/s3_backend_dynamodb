@@ -24,7 +24,7 @@ resource "aws_dynamodb_table" "table_for_s3" {
     type = "S"
   }
 
-  key_schema {
+  key {
     attribute_name = "LockID"
     key_type       = "HASH"
   }
